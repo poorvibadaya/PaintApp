@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0;
+    font-family: sans-serif;
+    background: #e91e63;
+}
+#my-canvas{
+   
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 0;
+}
+ul{
+    position: absolute;
+    top: 5%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 20px,0;
+    background: whitesmoke;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 8px 6px -6px;
+
+}
+ul li{
+  list-style: none;
+  text-align:center;
+    display:block;
+    border-right: 1px solid rgba(0,0,0,0.2);
+
+}
+ul li:last-child{
+   
+    border-right:none;
+}
+ul li a{
+    text-decoration: none;
+    text-align: center;
+    padding: 0 50px;
+    display: block;
+}
+
+ul li a .icon{
+    width: 30px;
+    height: 40px;
+    text-align: center;
+   
+    overflow: hidden;
+    margin: 0 auto 5px;
+}
+ul li a .icon .fa{
+    width: 100%;
+    height:100%;
+    text-align: center;
+    line-height: 42px;
+    font-size: 20px;
+    transition: 0.5s;
+    color: rgba(0, 0, 0, 0.274);
+}
+ul li a:hover .icon .fa:last-child{
+    color: #20030d85;
+    
+}
+
+/* Resize image to container */
+
+.colorbox{
+    display: flex;
+    align-self: center;
+    position: relative;
+    text-align:center;
+    margin: auto;
+    padding-top: 10px;
+    padding-inline-end: 10px;
+    gap: 22px;
+}
+#colorbox button{
+    font-size: 30px;
+    border: none;
+}
+
+ul li a .range{
+    width: 128px;
+    height: 30px;
+    text-align: center;
+   
+    overflow: hidden;
+    margin: 13px auto 3px;
+}
+
+.wrapper {
+    display: inline-flex;
+    height: 530px;
+    position: absolute;
+   
+}
+ 
+.toolbar{
+    width: 80px;
+    background-color: whitesmoke;
+    box-shadow: 0 8px 9px -2px;
+    margin-top: 75px;
+    border-radius: 1em;
+    padding: 11px ;
+    text-align: center;
+    
+}
+
+.toolbar a {
+    display:block;
+   
+    text-align: center;
+    width: 101.2%;
+    color: #1a0404a4;
+    font-size: 25px;
+   padding: 6px;
+    transition: all 0.3s ease;
+}
+ 
+.toolbar a img{
+    max-width:100%;
+    height:50px;
+    width: 50px;
+   
+}
+/* Change color on hover */
+.toolbar a:hover {
+    background-color: rgba(27, 4, 4, 0.384);
+    transform: scale(0.8);
+    
+  }
+ 
+/* Change color on selected icon */
+.selected {
+    background-color:#b5b0b0; 
+}
+ 
+ 
+#img-data-div{
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+    color: black;
+}
+ 
+
+

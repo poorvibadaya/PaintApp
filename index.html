@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Maker</title>
+    <link rel="stylesheet" href="ll.css">
+    <script src="jscolor.js"></script>
+    <script src="jstut7-2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/7353dbcc44.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+</head>
+
+<body>
+    <canvas id="my-canvas" width="1000" height="400"></canvas>
+    <nav class="navbar" id="navbar">
+        <div class="container" id="container">
+            <ul>
+
+                <li><a>
+                        <div class="range">
+                            <input type="range" value="1" min="1" max="50" class="pen-range" id="pen-range"
+                                oninput="draw_width = this.value">
+                        </div>
+                    </a></li>
+
+
+                <li>
+                    <a href="#">
+                        <div class="colorbox" id="colorbox">
+
+                            <button class="btn" value="black"><i class="fas fa-square"
+                                    style="color: black;"></i></button>
+                            <button class="btn" value="#5E5E5E"><i class="fas fa-square"
+                                    style="color: #5E5E5E;"></i></button>
+                            <button class="btn" value="#FFF1AA"><i class="fas fa-square"
+                                    style="color: #FFF1AA;"></i></button>
+                            <button class="btn" value="#B8DECD"><i class="fas fa-square"
+                                    style="color: #B8DECD;"></i></button>
+                            <button class="btn" value="#F7C5DA"><i class="fas fa-square"
+                                    style="color: #F7C5DA;"></i></button>
+                            <button class="btn" value="#58C2BF"><i class="fas fa-square"
+                                    style="color: #58C2BF;"></i></button>
+                            <button class="btn" value="#F8AD96"><i class="fas fa-square"
+                                    style="color: #F8AD96;"></i></button>
+                            <button class="btn" value="#FA7811"><i class="fas fa-square"
+                                    style="color: #FA7811;"></i></button>
+                            <button class="btn" value="#E81313"><i class="fas fa-square"
+                                    style="color: #E81313;"></i></button>
+                            <button class="btn" value="#39A2DB"><i class="fas fa-square"
+                                    style="color: #39A2DB;"></i></button>
+                            <button class="btn" value="#1071E5"><i class="fas fa-square"
+                                    style="color: #1071E5;"></i></button>
+                            <button class="btn" value="yellow"><i class="fas fa-square"
+                                    style="color: yellow;"></i></button>
+
+                        </div>
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#" onclick="clear_canvas();">
+                        <div class="icon" id="icon-refersh">
+                            <i class="fa fa-refresh fa-spin"></i>
+                        </div>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+
+        <div class="toolbar">
+
+            <a class="selected" href="#" id="brush" onclick="ChangeTool('brush')"> <i
+                    class="fa fa-paint-brush fa-2x"></i></a>
+            <a href="#" id="eraser" onclick="ChangeTool('eraser')"> <i class='fa fa-eraser fa-2x'></i></a>
+            <a href="#" id="line" onclick="ChangeTool('line')"> <i class='fa fa-ruler-vertical fa-2x'></i></a>
+            <a href="#" id="rectangle" onclick="ChangeTool('rectangle')"><i class="far fa-square fa-2x"></i></a>
+            <a href="#" id="circle" onclick="ChangeTool('circle')"><i class="far fa-circle fa-2x "></i></a>
+            <a href="#" id="ellipse" onclick="ChangeTool('ellipse')"><img src="img/elli.png"></a>
+            <a href="#" id="polygon" onclick="ChangeTool('polygon')"><img src="img/polygon.png"></a>
+        </div><br>
+
+
+    </div>
+    <script src="ll.js"></script>
+
+</body>
+
+</html>
